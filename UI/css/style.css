@@ -1,0 +1,91 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;        /* full screen */
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* optional: make container readable */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.card-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    margin: 40px auto;
+}
+
+h2, h3 {
+    font-weight: 600;
+    color: #1f2d3d;
+    margin-bottom: 20px;
+}
+.table {
+    background: #ffffff;
+}
+
+.table th {
+    background: #f1f4f8;
+    font-weight: 600;
+    color: #333;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.form-control {
+    border-radius: 6px;
+    box-shadow: none;
+}
+.btn-primary {
+    background-color: #0065ff;
+    border-color: #0065ff;
+    border-radius: 25px;
+    padding: 8px 22px;
+}
+
+.btn-primary:hover {
+    background-color: #004dcc;
+    border-color: #004dcc;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    border-radius: 20px;
+}
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header {
+    background: #0065ff;
+    color: #ffffff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.product-price,
+.product-total,
+.product-grand-total {
+    border: none;
+    background: transparent;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .card-box {
+        margin: 20px;
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

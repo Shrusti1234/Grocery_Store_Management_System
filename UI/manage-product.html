@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manage Products</title>
+
+    <!-- Bootstrap 3 (consistent with JS) -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+          <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="container">
+    <h2>Manage Products</h2>
+
+    <button class="btn btn-primary" data-toggle="modal" data-target="#addProductModal">
+        Add Product
+    </button>
+
+    <table class="table table-bordered mt-3">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Unit</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="productsTableBody"></tbody>
+    </table>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addProductModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="addProductForm">
+                <div class="modal-header">
+                    <h4>Add Product</h4>
+                </div>
+                <div class="modal-body">
+                    <input id="productName" class="form-control" placeholder="Product Name" required><br>
+                    <input id="productPrice" type="number" class="form-control" placeholder="Price" required>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button class="btn btn-success" type="submit">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="js/packages/jquery-3.6.0.min.js"></script>
+<script src="js/packages/bootstrap.min.js"></script>
+<script src="js/custom/common.js"></script>
+<script src="js/custom/manage-product.js"></script>
+</body>
+</html>
